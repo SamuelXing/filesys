@@ -4,3 +4,5 @@ client/keystore
 server/.srl
 client/node_modules
 client/package.json
+.idea/
+client/package-lock.json

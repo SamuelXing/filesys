@@ -18,8 +18,6 @@ const server= tls.createServer(options, (socket)=>{
 	});
 	
 	socket.setEncoding('utf8');
-	//socket.pipe(process.stdout);
-	//socket.pipe(socket);
 	
 	socket.on('data', (data)=>{
 		// JSON data to object
@@ -27,13 +25,20 @@ const server= tls.createServer(options, (socket)=>{
 		switch (message.command)
 		{
 			case 'LOGIN':
-				console.log(message.username);
+				console.log(data);
+				socket.write('got your data');
 				break;
 			case 'ACCESS':
+				console.log(data);
 				break;
 			case 'DELEGATE':
+				console.log(data);
 				break;
 			case 'SET_PERMISSION':
+				console.log(data);
+				break;
+			case 'LOGOUT':
+				console.log(data);
 				break;
 			default:
 				break;
