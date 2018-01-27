@@ -3,7 +3,7 @@ const fs = require('fs');
 const readline = require('readline');
 
 
-const rl = readline.createInterface({
+let rl =	readline.createInterface({
 	input: process.stdin,
 	output: process.stdout,
 	terminal: true
@@ -19,7 +19,7 @@ function hidden(query, callback) {
 			case "\n":
 			case "\r":
 			case "\u0004":
-				stdin.pause();
+				//stdin.pause();
 				break;
 			default:
 				process.stdout.write("\033[2K\033[200D" + query + Array(rl.line.length+1).join("*"));
@@ -51,22 +51,29 @@ const socket = tls.connect(options, ()=>{
 
 	//user login
 	rl.question('Username: ', function(username){
-		hidden('password: ', function(password){
-			let message = {
-				command: 'LOGIN',
-				username: username,
-				password: password
-			};
-			let data = JSON.stringify(message);
-			socket.write(data);
+		hidden('password: ', function(password) {
+    	let message = {
+        	command: 'LOGIN',
+          username: username,
+          password: password
+     	};
+     	let data = JSON.stringify(message);
+    	socket.write(data);
+
+            rl =	readline.createInterface({
+                input: process.stdin,
+                output: process.stdout,
+                terminal: true
+            });
+			
+			rl.question('\nPlease enter a command:\n1, Access File\n2, Set Permission\n3, Delegate Access\n4, Logout\n\n', function (answer) {
+     		rl.setPrompt('console>');
+
+			});
 		});
-	  
-		process.stdin.resume();
-		
-		rl.question('after: ', function(data){
-			console.log(data);
-		})
 	});
+	/*
+	*/
 
 });
 
