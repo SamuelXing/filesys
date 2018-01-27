@@ -17,11 +17,28 @@ const server= tls.createServer(options, (socket)=>{
 		console.log(error);
 	});
 	
-	socket.write('welcome!\n');
 	socket.setEncoding('utf8');
-	socket.pipe(process.stdout);
-	socket.pipe(socket);
-
+	//socket.pipe(process.stdout);
+	//socket.pipe(socket);
+	
+	socket.on('data', (data)=>{
+		// JSON data to object
+		let message = JSON.parse(data);
+		switch (message.command)
+		{
+			case 'LOGIN':
+				console.log(message.username);
+				break;
+			case 'ACCESS':
+				break;
+			case 'DELEGATE':
+				break;
+			case 'SET_PERMISSION':
+				break;
+			default:
+				break;
+		}
+	});
 });
 
 
@@ -29,9 +46,5 @@ server.listen(8000, ()=>{
 	console.log('server is listening on 8000...');
 });
 
-server.on('newSession', (id, data, cb)=>{
-	tlsSessionStore[id.toString('hex')] = data;
-	console.log(data)
-	cb();
-});
+
 
