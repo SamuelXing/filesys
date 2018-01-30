@@ -6,3 +6,8 @@ client/node_modules
 client/package.json
 .idea/
 client/package-lock.json
+server/node_modules/
+client/dev/
+server/contractTest.js
+server/node_modules/
+server/package-lock.json

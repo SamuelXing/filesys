@@ -1,0 +1,1383 @@
+{
+  "contractName": "LogContract",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "timestamp",
+          "type": "bytes32"
+        },
+        {
+          "name": "username",
+          "type": "bytes32"
+        },
+        {
+          "name": "content",
+          "type": "bytes32"
+        }
+      ],
+      "name": "addARecord",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getLogCount",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "index",
+          "type": "uint256"
+        }
+      ],
+      "name": "getARecord",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bytes32"
+        },
+        {
+          "name": "",
+          "type": "bytes32"
+        },
+        {
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x6060604052341561000f57600080fd5b61033a8061001e6000396000f300606060405260043610610057576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806355e010de1461005c578063618033db146100b15780639766067d146100da575b600080fd5b341561006757600080fd5b61009b6004808035600019169060200190919080356000191690602001909190803560001916906020019091905050610137565b6040518082815260200191505060405180910390f35b34156100bc57600080fd5b6100c46101ea565b6040518082815260200191505060405180910390f35b34156100e557600080fd5b6100fb60048080359060200190919050506101f6565b60405180846000191660001916815260200183600019166000191681526020018260001916600019168152602001935050505060405180910390f35b600061014161027a565b8481600001906000191690816000191681525050838160200190600019169081600019168152505082816040019060001916908160001916815250506000805480600101828161019191906102a5565b916000526020600020906003020160008390919091506000820151816000019060001916905560208201518160010190600019169055604082015181600201906000191690555050506000805490509150509392505050565b60008080549050905090565b600080600080805490508410151561020a57fe5b60008481548110151561021957fe5b90600052602060002090600302016000015460008581548110151561023a57fe5b90600052602060002090600302016001015460008681548110151561025b57fe5b9060005260206000209060030201600201549250925092509193909250565b6060604051908101604052806000801916815260200160008019168152602001600080191681525090565b8154818355818115116102d2576003028160030283600052602060002091820191016102d191906102d7565b5b505050565b61030b91905b808211156103075760008082016000905560018201600090556002820160009055506003016102dd565b5090565b905600a165627a7a723058204671a018323c0f9992dd65fd11a2f82f203ee4c17fd49bb4af3dacea517444ad0029",
+  "deployedBytecode": "0x606060405260043610610057576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806355e010de1461005c578063618033db146100b15780639766067d146100da575b600080fd5b341561006757600080fd5b61009b6004808035600019169060200190919080356000191690602001909190803560001916906020019091905050610137565b6040518082815260200191505060405180910390f35b34156100bc57600080fd5b6100c46101ea565b6040518082815260200191505060405180910390f35b34156100e557600080fd5b6100fb60048080359060200190919050506101f6565b60405180846000191660001916815260200183600019166000191681526020018260001916600019168152602001935050505060405180910390f35b600061014161027a565b8481600001906000191690816000191681525050838160200190600019169081600019168152505082816040019060001916908160001916815250506000805480600101828161019191906102a5565b916000526020600020906003020160008390919091506000820151816000019060001916905560208201518160010190600019169055604082015181600201906000191690555050506000805490509150509392505050565b60008080549050905090565b600080600080805490508410151561020a57fe5b60008481548110151561021957fe5b90600052602060002090600302016000015460008581548110151561023a57fe5b90600052602060002090600302016001015460008681548110151561025b57fe5b9060005260206000209060030201600201549250925092509193909250565b6060604051908101604052806000801916815260200160008019168152602001600080191681525090565b8154818355818115116102d2576003028160030283600052602060002091820191016102d191906102d7565b5b505050565b61030b91905b808211156103075760008082016000905560018201600090556002820160009055506003016102dd565b5090565b905600a165627a7a723058204671a018323c0f9992dd65fd11a2f82f203ee4c17fd49bb4af3dacea517444ad0029",
+  "sourceMap": "26:748:0:-;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "26:748:0:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;184:280;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;470:87;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;563:209;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;184:280;273:4;293:16;;:::i;:::-;335:9;319:2;:13;;:25;;;;;;;;;;;;;369:8;354:2;:12;;:23;;;;;;;;;;;;;401:7;387:2;:11;;:21;;;;;;;;;;;;;418:3;:12;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;427:2;418:12;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;447:3;:10;;;;440:17;;184:280;;;;;;:::o;470:87::-;513:4;540:3;:10;;;;533:17;;470:87;:::o;563:209::-;615:7;624;633;671:3;:10;;;;663:5;:18;656:26;;;;;;700:3;704:5;700:10;;;;;;;;;;;;;;;;;;;;:21;;;723:3;727:5;723:10;;;;;;;;;;;;;;;;;;;;:20;;;745:3;749:5;745:10;;;;;;;;;;;;;;;;;;;;:19;;;692:73;;;;;;563:209;;;;;:::o;26:748::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
+  "source": "pragma solidity ^0.4.17;\n\ncontract LogContract\n{\n    struct Record\n    {\n        bytes32 timestamp_;\n        bytes32 username_;\n        bytes32 content_;\n    }\n\n    Record[] log;\n\n    function addARecord(bytes32 timestamp, bytes32 username, bytes32 content) public returns(uint)\n    {\n        Record memory rc;\n        rc.timestamp_ = timestamp;\n        rc.username_ = username;\n        rc.content_ = content;\n        log.push(rc);\n        return log.length;\n    }\n\n    function getLogCount() public view returns(uint)\n    {\n        return log.length;\n    }\n\n    function getARecord(uint index) public view returns(bytes32, bytes32, bytes32)\n    {\n        assert(index < log.length);\n        return (log[index].timestamp_, log[index].username_, log[index].content_);\n    }\n}",
+  "sourcePath": "/Users/samuel/code/filesys/server/contracts/LogContract.sol",
+  "ast": {
+    "attributes": {
+      "absolutePath": "/Users/samuel/code/filesys/server/contracts/LogContract.sol",
+      "exportedSymbols": {
+        "LogContract": [
+          96
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "^",
+            "0.4",
+            ".17"
+          ]
+        },
+        "id": 1,
+        "name": "PragmaDirective",
+        "src": "0:24:0"
+      },
+      {
+        "attributes": {
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            96
+          ],
+          "name": "LogContract",
+          "scope": 97
+        },
+        "children": [
+          {
+            "attributes": {
+              "canonicalName": "LogContract.Record",
+              "name": "Record",
+              "scope": 96,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "timestamp_",
+                  "scope": 8,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "bytes32",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "bytes32",
+                      "type": "bytes32"
+                    },
+                    "id": 2,
+                    "name": "ElementaryTypeName",
+                    "src": "81:7:0"
+                  }
+                ],
+                "id": 3,
+                "name": "VariableDeclaration",
+                "src": "81:18:0"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "username_",
+                  "scope": 8,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "bytes32",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "bytes32",
+                      "type": "bytes32"
+                    },
+                    "id": 4,
+                    "name": "ElementaryTypeName",
+                    "src": "109:7:0"
+                  }
+                ],
+                "id": 5,
+                "name": "VariableDeclaration",
+                "src": "109:17:0"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "content_",
+                  "scope": 8,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "bytes32",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "bytes32",
+                      "type": "bytes32"
+                    },
+                    "id": 6,
+                    "name": "ElementaryTypeName",
+                    "src": "136:7:0"
+                  }
+                ],
+                "id": 7,
+                "name": "VariableDeclaration",
+                "src": "136:16:0"
+              }
+            ],
+            "id": 8,
+            "name": "StructDefinition",
+            "src": "53:106:0"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "name": "log",
+              "scope": 96,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "struct LogContract.Record storage ref[] storage ref",
+              "value": null,
+              "visibility": "internal"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "length": null,
+                  "type": "struct LogContract.Record storage ref[] storage pointer"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "contractScope": null,
+                      "name": "Record",
+                      "referencedDeclaration": 8,
+                      "type": "struct LogContract.Record storage pointer"
+                    },
+                    "id": 9,
+                    "name": "UserDefinedTypeName",
+                    "src": "165:6:0"
+                  }
+                ],
+                "id": 10,
+                "name": "ArrayTypeName",
+                "src": "165:8:0"
+              }
+            ],
+            "id": 11,
+            "name": "VariableDeclaration",
+            "src": "165:12:0"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "implemented": true,
+              "isConstructor": false,
+              "modifiers": [
+                null
+              ],
+              "name": "addARecord",
+              "payable": false,
+              "scope": 96,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "timestamp",
+                      "scope": 53,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "bytes32",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bytes32",
+                          "type": "bytes32"
+                        },
+                        "id": 12,
+                        "name": "ElementaryTypeName",
+                        "src": "204:7:0"
+                      }
+                    ],
+                    "id": 13,
+                    "name": "VariableDeclaration",
+                    "src": "204:17:0"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "username",
+                      "scope": 53,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "bytes32",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bytes32",
+                          "type": "bytes32"
+                        },
+                        "id": 14,
+                        "name": "ElementaryTypeName",
+                        "src": "223:7:0"
+                      }
+                    ],
+                    "id": 15,
+                    "name": "VariableDeclaration",
+                    "src": "223:16:0"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "content",
+                      "scope": 53,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "bytes32",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bytes32",
+                          "type": "bytes32"
+                        },
+                        "id": 16,
+                        "name": "ElementaryTypeName",
+                        "src": "241:7:0"
+                      }
+                    ],
+                    "id": 17,
+                    "name": "VariableDeclaration",
+                    "src": "241:15:0"
+                  }
+                ],
+                "id": 18,
+                "name": "ParameterList",
+                "src": "203:54:0"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "",
+                      "scope": 53,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint",
+                          "type": "uint256"
+                        },
+                        "id": 19,
+                        "name": "ElementaryTypeName",
+                        "src": "273:4:0"
+                      }
+                    ],
+                    "id": 20,
+                    "name": "VariableDeclaration",
+                    "src": "273:4:0"
+                  }
+                ],
+                "id": 21,
+                "name": "ParameterList",
+                "src": "272:6:0"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "assignments": [
+                        null
+                      ],
+                      "initialValue": null
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "constant": false,
+                          "name": "rc",
+                          "scope": 53,
+                          "stateVariable": false,
+                          "storageLocation": "memory",
+                          "type": "struct LogContract.Record memory",
+                          "value": null,
+                          "visibility": "internal"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "contractScope": null,
+                              "name": "Record",
+                              "referencedDeclaration": 8,
+                              "type": "struct LogContract.Record storage pointer"
+                            },
+                            "id": 22,
+                            "name": "UserDefinedTypeName",
+                            "src": "293:6:0"
+                          }
+                        ],
+                        "id": 23,
+                        "name": "VariableDeclaration",
+                        "src": "293:16:0"
+                      }
+                    ],
+                    "id": 24,
+                    "name": "VariableDeclarationStatement",
+                    "src": "293:16:0"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "bytes32"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": true,
+                              "member_name": "timestamp_",
+                              "referencedDeclaration": 3,
+                              "type": "bytes32"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 23,
+                                  "type": "struct LogContract.Record memory",
+                                  "value": "rc"
+                                },
+                                "id": 25,
+                                "name": "Identifier",
+                                "src": "319:2:0"
+                              }
+                            ],
+                            "id": 27,
+                            "name": "MemberAccess",
+                            "src": "319:13:0"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 13,
+                              "type": "bytes32",
+                              "value": "timestamp"
+                            },
+                            "id": 28,
+                            "name": "Identifier",
+                            "src": "335:9:0"
+                          }
+                        ],
+                        "id": 29,
+                        "name": "Assignment",
+                        "src": "319:25:0"
+                      }
+                    ],
+                    "id": 30,
+                    "name": "ExpressionStatement",
+                    "src": "319:25:0"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "bytes32"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": true,
+                              "member_name": "username_",
+                              "referencedDeclaration": 5,
+                              "type": "bytes32"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 23,
+                                  "type": "struct LogContract.Record memory",
+                                  "value": "rc"
+                                },
+                                "id": 31,
+                                "name": "Identifier",
+                                "src": "354:2:0"
+                              }
+                            ],
+                            "id": 33,
+                            "name": "MemberAccess",
+                            "src": "354:12:0"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 15,
+                              "type": "bytes32",
+                              "value": "username"
+                            },
+                            "id": 34,
+                            "name": "Identifier",
+                            "src": "369:8:0"
+                          }
+                        ],
+                        "id": 35,
+                        "name": "Assignment",
+                        "src": "354:23:0"
+                      }
+                    ],
+                    "id": 36,
+                    "name": "ExpressionStatement",
+                    "src": "354:23:0"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "bytes32"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": true,
+                              "member_name": "content_",
+                              "referencedDeclaration": 7,
+                              "type": "bytes32"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 23,
+                                  "type": "struct LogContract.Record memory",
+                                  "value": "rc"
+                                },
+                                "id": 37,
+                                "name": "Identifier",
+                                "src": "387:2:0"
+                              }
+                            ],
+                            "id": 39,
+                            "name": "MemberAccess",
+                            "src": "387:11:0"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 17,
+                              "type": "bytes32",
+                              "value": "content"
+                            },
+                            "id": 40,
+                            "name": "Identifier",
+                            "src": "401:7:0"
+                          }
+                        ],
+                        "id": 41,
+                        "name": "Assignment",
+                        "src": "387:21:0"
+                      }
+                    ],
+                    "id": 42,
+                    "name": "ExpressionStatement",
+                    "src": "387:21:0"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "type": "uint256",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_struct$_Record_$8_memory_ptr",
+                                  "typeString": "struct LogContract.Record memory"
+                                }
+                              ],
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "member_name": "push",
+                              "referencedDeclaration": null,
+                              "type": "function (struct LogContract.Record storage ref) returns (uint256)"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 11,
+                                  "type": "struct LogContract.Record storage ref[] storage ref",
+                                  "value": "log"
+                                },
+                                "id": 43,
+                                "name": "Identifier",
+                                "src": "418:3:0"
+                              }
+                            ],
+                            "id": 45,
+                            "name": "MemberAccess",
+                            "src": "418:8:0"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 23,
+                              "type": "struct LogContract.Record memory",
+                              "value": "rc"
+                            },
+                            "id": 46,
+                            "name": "Identifier",
+                            "src": "427:2:0"
+                          }
+                        ],
+                        "id": 47,
+                        "name": "FunctionCall",
+                        "src": "418:12:0"
+                      }
+                    ],
+                    "id": 48,
+                    "name": "ExpressionStatement",
+                    "src": "418:12:0"
+                  },
+                  {
+                    "attributes": {
+                      "functionReturnParameters": 21
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": true,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "member_name": "length",
+                          "referencedDeclaration": null,
+                          "type": "uint256"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 11,
+                              "type": "struct LogContract.Record storage ref[] storage ref",
+                              "value": "log"
+                            },
+                            "id": 49,
+                            "name": "Identifier",
+                            "src": "447:3:0"
+                          }
+                        ],
+                        "id": 50,
+                        "name": "MemberAccess",
+                        "src": "447:10:0"
+                      }
+                    ],
+                    "id": 51,
+                    "name": "Return",
+                    "src": "440:17:0"
+                  }
+                ],
+                "id": 52,
+                "name": "Block",
+                "src": "283:181:0"
+              }
+            ],
+            "id": 53,
+            "name": "FunctionDefinition",
+            "src": "184:280:0"
+          },
+          {
+            "attributes": {
+              "constant": true,
+              "implemented": true,
+              "isConstructor": false,
+              "modifiers": [
+                null
+              ],
+              "name": "getLogCount",
+              "payable": false,
+              "scope": 96,
+              "stateMutability": "view",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 54,
+                "name": "ParameterList",
+                "src": "490:2:0"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "",
+                      "scope": 62,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint",
+                          "type": "uint256"
+                        },
+                        "id": 55,
+                        "name": "ElementaryTypeName",
+                        "src": "513:4:0"
+                      }
+                    ],
+                    "id": 56,
+                    "name": "VariableDeclaration",
+                    "src": "513:4:0"
+                  }
+                ],
+                "id": 57,
+                "name": "ParameterList",
+                "src": "512:6:0"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "functionReturnParameters": 57
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": true,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "member_name": "length",
+                          "referencedDeclaration": null,
+                          "type": "uint256"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 11,
+                              "type": "struct LogContract.Record storage ref[] storage ref",
+                              "value": "log"
+                            },
+                            "id": 58,
+                            "name": "Identifier",
+                            "src": "540:3:0"
+                          }
+                        ],
+                        "id": 59,
+                        "name": "MemberAccess",
+                        "src": "540:10:0"
+                      }
+                    ],
+                    "id": 60,
+                    "name": "Return",
+                    "src": "533:17:0"
+                  }
+                ],
+                "id": 61,
+                "name": "Block",
+                "src": "523:34:0"
+              }
+            ],
+            "id": 62,
+            "name": "FunctionDefinition",
+            "src": "470:87:0"
+          },
+          {
+            "attributes": {
+              "constant": true,
+              "implemented": true,
+              "isConstructor": false,
+              "modifiers": [
+                null
+              ],
+              "name": "getARecord",
+              "payable": false,
+              "scope": 96,
+              "stateMutability": "view",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "index",
+                      "scope": 95,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint",
+                          "type": "uint256"
+                        },
+                        "id": 63,
+                        "name": "ElementaryTypeName",
+                        "src": "583:4:0"
+                      }
+                    ],
+                    "id": 64,
+                    "name": "VariableDeclaration",
+                    "src": "583:10:0"
+                  }
+                ],
+                "id": 65,
+                "name": "ParameterList",
+                "src": "582:12:0"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "",
+                      "scope": 95,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "bytes32",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bytes32",
+                          "type": "bytes32"
+                        },
+                        "id": 66,
+                        "name": "ElementaryTypeName",
+                        "src": "615:7:0"
+                      }
+                    ],
+                    "id": 67,
+                    "name": "VariableDeclaration",
+                    "src": "615:7:0"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "",
+                      "scope": 95,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "bytes32",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bytes32",
+                          "type": "bytes32"
+                        },
+                        "id": 68,
+                        "name": "ElementaryTypeName",
+                        "src": "624:7:0"
+                      }
+                    ],
+                    "id": 69,
+                    "name": "VariableDeclaration",
+                    "src": "624:7:0"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "",
+                      "scope": 95,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "bytes32",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bytes32",
+                          "type": "bytes32"
+                        },
+                        "id": 70,
+                        "name": "ElementaryTypeName",
+                        "src": "633:7:0"
+                      }
+                    ],
+                    "id": 71,
+                    "name": "VariableDeclaration",
+                    "src": "633:7:0"
+                  }
+                ],
+                "id": 72,
+                "name": "ParameterList",
+                "src": "614:27:0"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "type": "tuple()",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_bool",
+                                  "typeString": "bool"
+                                }
+                              ],
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 99,
+                              "type": "function (bool) pure",
+                              "value": "assert"
+                            },
+                            "id": 73,
+                            "name": "Identifier",
+                            "src": "656:6:0"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "commonType": {
+                                "typeIdentifier": "t_uint256",
+                                "typeString": "uint256"
+                              },
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "operator": "<",
+                              "type": "bool"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 64,
+                                  "type": "uint256",
+                                  "value": "index"
+                                },
+                                "id": 74,
+                                "name": "Identifier",
+                                "src": "663:5:0"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isLValue": true,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "member_name": "length",
+                                  "referencedDeclaration": null,
+                                  "type": "uint256"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 11,
+                                      "type": "struct LogContract.Record storage ref[] storage ref",
+                                      "value": "log"
+                                    },
+                                    "id": 75,
+                                    "name": "Identifier",
+                                    "src": "671:3:0"
+                                  }
+                                ],
+                                "id": 76,
+                                "name": "MemberAccess",
+                                "src": "671:10:0"
+                              }
+                            ],
+                            "id": 77,
+                            "name": "BinaryOperation",
+                            "src": "663:18:0"
+                          }
+                        ],
+                        "id": 78,
+                        "name": "FunctionCall",
+                        "src": "656:26:0"
+                      }
+                    ],
+                    "id": 79,
+                    "name": "ExpressionStatement",
+                    "src": "656:26:0"
+                  },
+                  {
+                    "attributes": {
+                      "functionReturnParameters": 72
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isInlineArray": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "type": "tuple(bytes32,bytes32,bytes32)"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "member_name": "timestamp_",
+                              "referencedDeclaration": 3,
+                              "type": "bytes32"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isLValue": true,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "type": "struct LogContract.Record storage ref"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 11,
+                                      "type": "struct LogContract.Record storage ref[] storage ref",
+                                      "value": "log"
+                                    },
+                                    "id": 80,
+                                    "name": "Identifier",
+                                    "src": "700:3:0"
+                                  },
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 64,
+                                      "type": "uint256",
+                                      "value": "index"
+                                    },
+                                    "id": 81,
+                                    "name": "Identifier",
+                                    "src": "704:5:0"
+                                  }
+                                ],
+                                "id": 82,
+                                "name": "IndexAccess",
+                                "src": "700:10:0"
+                              }
+                            ],
+                            "id": 83,
+                            "name": "MemberAccess",
+                            "src": "700:21:0"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "member_name": "username_",
+                              "referencedDeclaration": 5,
+                              "type": "bytes32"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isLValue": true,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "type": "struct LogContract.Record storage ref"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 11,
+                                      "type": "struct LogContract.Record storage ref[] storage ref",
+                                      "value": "log"
+                                    },
+                                    "id": 84,
+                                    "name": "Identifier",
+                                    "src": "723:3:0"
+                                  },
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 64,
+                                      "type": "uint256",
+                                      "value": "index"
+                                    },
+                                    "id": 85,
+                                    "name": "Identifier",
+                                    "src": "727:5:0"
+                                  }
+                                ],
+                                "id": 86,
+                                "name": "IndexAccess",
+                                "src": "723:10:0"
+                              }
+                            ],
+                            "id": 87,
+                            "name": "MemberAccess",
+                            "src": "723:20:0"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "member_name": "content_",
+                              "referencedDeclaration": 7,
+                              "type": "bytes32"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isLValue": true,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "type": "struct LogContract.Record storage ref"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 11,
+                                      "type": "struct LogContract.Record storage ref[] storage ref",
+                                      "value": "log"
+                                    },
+                                    "id": 88,
+                                    "name": "Identifier",
+                                    "src": "745:3:0"
+                                  },
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 64,
+                                      "type": "uint256",
+                                      "value": "index"
+                                    },
+                                    "id": 89,
+                                    "name": "Identifier",
+                                    "src": "749:5:0"
+                                  }
+                                ],
+                                "id": 90,
+                                "name": "IndexAccess",
+                                "src": "745:10:0"
+                              }
+                            ],
+                            "id": 91,
+                            "name": "MemberAccess",
+                            "src": "745:19:0"
+                          }
+                        ],
+                        "id": 92,
+                        "name": "TupleExpression",
+                        "src": "699:66:0"
+                      }
+                    ],
+                    "id": 93,
+                    "name": "Return",
+                    "src": "692:73:0"
+                  }
+                ],
+                "id": 94,
+                "name": "Block",
+                "src": "646:126:0"
+              }
+            ],
+            "id": 95,
+            "name": "FunctionDefinition",
+            "src": "563:209:0"
+          }
+        ],
+        "id": 96,
+        "name": "ContractDefinition",
+        "src": "26:748:0"
+      }
+    ],
+    "id": 97,
+    "name": "SourceUnit",
+    "src": "0:774:0"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.18+commit.9cf6e910.Emscripten.clang"
+  },
+  "networks": {
+    "1517262105704": {
+      "events": {},
+      "links": {},
+      "address": "0xd4967918be8443b249f53efaeda93464a0cf8e95"
+    },
+    "1517266739091": {
+      "events": {},
+      "links": {},
+      "address": "0x2d4cb7a4ef86d7aed22c8044853d0452b0193863"
+    },
+    "1517272181032": {
+      "events": {},
+      "links": {},
+      "address": "0xdc79156535914dd5f273e09b12e6e08c4a42944c"
+    },
+    "1517272294788": {
+      "events": {},
+      "links": {},
+      "address": "0xb890162e20db8650cdd49c203b7e8bb0734265de"
+    },
+    "1517278495963": {
+      "events": {},
+      "links": {},
+      "address": "0xb5eaad9981a2fea7192f0a6b259466bfbb7755f5"
+    },
+    "1517279158635": {
+      "events": {},
+      "links": {},
+      "address": "0x94b227460c7bab1582816d23c513a2691a615a7b"
+    }
+  },
+  "schemaVersion": "1.0.1",
+  "updatedAt": "2018-01-30T02:35:08.450Z"
+}
