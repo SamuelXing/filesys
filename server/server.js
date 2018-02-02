@@ -1,5 +1,5 @@
 // TODO: server close
-//
+// TODO: bug fix,
 const tls = require('tls');
 const fs = require('fs');
 const CryptoJS = require('crypto-js');
@@ -22,8 +22,8 @@ let dbStore = JSON.parse(fs.readFileSync('./db.dat','utf8'));
 const provider = new web3.providers.HttpProvider("http://localhost:8545");
 const newweb3 = new web3(provider);
 
-const account_address = "0x45d3298dfb9b09bd029a7e6ce1a9ba18d3a6662b";
-const contract_address = "0x94b227460c7bab1582816d23c513a2691a615a7b";
+const account_address = "0x98fbac836305a4cfad176f9bde7cda332ba16bd2";
+const contract_address = "0xcbb9f41c256187f03afc33ac513665e5d650075a";
 
 const sc = new contract(require("./build/contracts/LogContract.json"));
 

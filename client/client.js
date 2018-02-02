@@ -31,10 +31,10 @@ const socket = tls.connect(options, ()=>{
   let data = JSON.stringify(message);
   socket.write(data);
 
-	console.log('\nPlease enter a command:\na, Access File\nb, Set Permission\nc, Delegate Access\nd, Logout\n\n');
-	// command prompt
+  console.log('\nPlease enter a command:\na, Access File\nb, Set Permission\nc, Delegate Access\nd, Logout\n\n');
+  // command prompt
   const stdin = process.openStdin();
-	console.log('=====================');
+  console.log('=====================');
 
   stdin.addListener("data", function(command) {
     		command = command.toString().trim();
@@ -45,7 +45,7 @@ const socket = tls.connect(options, ()=>{
                 message.from = username;
                 message.access = 'f1.txt';
                 data = JSON.stringify(message);
-								console.log('=====================');
+                console.log('=====================');
                 socket.write(data);
                 break;
             case 'b':
@@ -54,19 +54,17 @@ const socket = tls.connect(options, ()=>{
                 message.from = username;
                 message.access = 'f1.txt';
                 data = JSON.stringify(message);
-								console.log('=====================');
-                console.log('command > ');
+                console.log('=====================');
                 socket.write(data);
                 break;
             case 'c':
                 message = {};
                 message.command = 'DELEGATE';
                 message.from = username;
-								message.access = 'f1.txt';
+                message.access = 'f1.txt';
                 message.grant = 'userB';
                 data = JSON.stringify(message);
-								console.log('=====================');
-                console.log('command > ');
+                console.log('=====================');
                 socket.write(data);
                 break;
             case 'd':
@@ -74,13 +72,12 @@ const socket = tls.connect(options, ()=>{
                 message.command = 'LOGOUT';
                 message.who = username;
                 data = JSON.stringify(message);
-								console.log('=====================');
-                console.log('command > ');
+                console.log('=====================');
                 socket.write(data);
                 break;
             default:
                 console.log("Invalid input, please retry.");
-								console.log('=====================');
+                console.log('=====================');
                 break;
         }
 	});
