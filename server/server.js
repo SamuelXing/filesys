@@ -61,9 +61,9 @@ async function log2bck(username, content)
 	{
 		let now = moment();
 		let formatted = now.format('YY-MM-DD HH:mm:ss');
-        let newstr = formatted.split(' ')
+		let newstr = formatted.split(' ')
 		let date = newstr[0];
-        let timestamp = newstr[1];
+		let timestamp = newstr[1];
 		let instance = await getContract();
 		date = newweb3.fromAscii(''+date);
 		timestamp = newweb3.fromAscii(''+timestamp);
@@ -112,7 +112,7 @@ const server= tls.createServer(options, (socket)=>{
 					server.tlsSessions[message.username] = true;
 					let strReply = genMsg('server', 'LOGIN_REPLY', 'successfully signed in');
 					// log to bck
-                    log2bck(message.username, message.command);
+					log2bck(message.username, message.command);
 					socket.write(strReply);
 				}
 				else
@@ -160,7 +160,7 @@ const server= tls.createServer(options, (socket)=>{
 					dbStore['permission'][message.access].push(message.grant);
 					reply.content = 'permission has been granted to '+message.grant;
 					strReply = JSON.stringify(reply);
-                    log2bck(message.username, message.command);
+					log2bck(message.username, message.command);
 					socket.write(strReply);
 				}
 				else
@@ -179,7 +179,7 @@ const server= tls.createServer(options, (socket)=>{
 					dbStore['permission'][message.access].push(message.from);
 					reply.content = 'permission set';
 					strReply = JSON.stringify(reply);
-                    log2bck(message.username, 'SET_P');
+					log2bck(message.username, 'SET_P');
 					socket.write(strReply);
 				}
 				else
