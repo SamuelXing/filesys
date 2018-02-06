@@ -75,13 +75,6 @@ struct Record
 Record[] log;
 ```
 
-## Screenshots
-**Client**
-![Client](./screenshots/Client.png)
-
-**Server**
-![Server](./screenshots/Server.png)
-
 ## License
 ```
 Copyright (C) 2016 Bilibili. All Rights Reserved.
