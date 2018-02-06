@@ -77,10 +77,10 @@ Record[] log;
 
 ## Screenshots
 **Client**
-![Client](./screenshots/client.png)
+![Client](./screenshots/Client.png)
 
 **Server**
-![Server](./screenshots/server.png)
+![Server](./screenshots/Server.png)
 
 ## License
 ```
