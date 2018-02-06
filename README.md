@@ -47,18 +47,23 @@ Client ----- client.js           # main entry for client
 I used ```tls``` module to implement the secure communication. The ```tls``` module provides an implementation of the Transport Layer Security (TLS) and Secure Socket Layer (SSL) protocols that is built on top of OpenSSL. 
 
 **client**
+
 At the first place, server sent its certificate to the client, client verify it with CA's public key. The session will stop if verification is not passed.
 
 **server**
-The server verifies client via its username and password which is pre-stored in the file ```db.dat```. The password is plain text when the server received it, the server will hash the password and compare it with the DB record. 
+
+The server verifies client via its username and password which is pre-stored in the file ```db.dat```. The password is ciphertext when the server received it, the server will decrypt and hash the password and compare it with the DB record. 
 
 2, **Remote File Access Control (Currently Implemented )**
 
-**Access_File(username, filename)**. Accessing a file will require a user has the permission on this file, if not, error message will be sent back from the server. The successful execution will return the contents of the required file.
+**Access_File(username, filename)**. 
+Accessing a file will require a user has the permission on this file, if not, error message will be sent back from the server. The successful execution will return the contents of the required file.
 
-**Set_File_Permission(username, filename)**. Setting a user's permission on a file.
+**Set_File_Permission(username, filename)**. 
+Setting a user's permission on a file.
 
-**Delegate_File(delegator, delegatee, filename)**. Delegating a file's permission to delegatee, then the delegatee has the permission to access the file.
+**Delegate_File(delegator, delegatee, filename)**.
+Delegating a file's permission to delegatee, then the delegatee has the permission to access the file.
  
 3, **Blockchain logging**
 
