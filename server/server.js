@@ -22,8 +22,8 @@ let dbStore = JSON.parse(fs.readFileSync('./db.dat','utf8'));
 const provider = new web3.providers.HttpProvider("http://localhost:8545");
 const newweb3 = new web3(provider);
 
-const account_address = "0x98fbac836305a4cfad176f9bde7cda332ba16bd2";
-const contract_address = "0xcbb9f41c256187f03afc33ac513665e5d650075a";
+const account_address = "0x269ffbe1a553078b41278d476da3744f459ec959";
+const contract_address = "0xd3c1b3ba901ef097cbd2cba1801c604bc0fcf9c5";
 
 const sc = new contract(require("./build/contracts/LogContract.json"));
 
